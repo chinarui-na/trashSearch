@@ -1,0 +1,26 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/home/index/index",
+        "pages/my/index/index",
+        "pages/home/Recyclable/Recyclable",
+        "pages/home/search/search",
+        "pages/home/Dry/Dry",
+        "pages/home/Wet/Wet",
+        "pages/home/Harmful/Harmful"
+    ],
+    "window":
+    {
+        "navigationStyle": "custom"
+    },
+    "usingComponents":
+    {
+        "cu-custom": "./colorui/components/cu-custom",
+        "wux-vcode": "./static/wux/vcode/index",
+        "wux-toast": "./static/wux/toast/index",
+        "wux-segmented-control": "./static/wux/segmented-control/index"
+
+
+    },
+    "sitemapLocation": "sitemap.json"
+}

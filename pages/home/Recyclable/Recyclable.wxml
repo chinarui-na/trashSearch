@@ -1,0 +1,17 @@
+<cu-custom bgColor="bg-Recyclable" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">干垃圾</view>
+</cu-custom>
+<wux-toast id="wux-toast" />
+<view class="cu-list menu ">
+    <block wx:for="{{contentArr}}" wx:for-index="idx" wx:for-item="item" wx:key="*this">
+        <view class="cu-item">
+            <view class="content">
+                <text class="text-Wet">{{item.name}}</text>
+            </view>
+            <view class="action">
+                <text class="text-sm  text-Wet">{{item.type}} </text>
+            </view>
+        </view>
+    </block>
+</view>

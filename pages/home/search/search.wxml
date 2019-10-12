@@ -1,0 +1,23 @@
+<cu-custom bgColor="bg-Dry" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">搜索</view>
+</cu-custom>
+<wux-toast id="wux-toast" />
+<view class="cu-bar bg-white search">
+    <view class="search-form round" style="height:80rpx;line-height:80rpx">
+        <text class="icon-search"></text>
+        <input type="text" placeholder="输入搜索的关键词" focus confirm-type="search" bindinput="searchInput" bindconfirm="done"></input>
+    </view>
+</view>
+<view class="cu-list menu ">
+    <block wx:for="{{searchArr}}" wx:for-index="idx" wx:for-item="item" wx:key="*this">
+        <view class="cu-item" >
+            <view class="content">
+                <text class="text-Wet">{{item.name}}</text>
+            </view>
+            <view class="action">
+                <text class="text-sm  text-Wet">{{item.type}} </text>
+            </view>
+        </view>
+    </block>
+</view>

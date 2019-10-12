@@ -1,0 +1,18 @@
+
+<scroll-view scroll-y class="scrollPage">
+    <image src='http://img.chinarui.cn/trash_logo1.jpg' class='png' style='width:100%;'></image>
+    <view class="cu-bar bg-white search padding">
+        <view class="search-form round">
+            <text class="icon-search"></text>
+            <input type="text" disabled placeholder="输入搜索的关键词" bind:tap="search"></input>
+        </view>
+    </view>
+    <view class='nav-list text-white margin-top-lg'>
+        <navigator open-type="navigate" hover-class='none' url="/pages/home/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key>
+            <view class="nav-title">{{item.title}}</view>
+            <view class="nav-name">{{item.name}}</view>
+            <text class='icon-{{item.icon}}'></text>
+        </navigator>
+    </view>
+    <view class='cu-tabbar-height'></view>
+</scroll-view>
